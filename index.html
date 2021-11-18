@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&family=Rubik:wght@400;500&family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="theme-one">
+    <div class="calculator">
+      <div class="heading">
+        <h1 class="header">calc</h1>
+        <div class="theme">THEME</div>
+        <div class="themes">
+          <div class="theme-type">
+            <div class="theme-num">1</div>
+            <div class="theme-num">2</div>
+            <div class="theme-num">3</div>
+          </div>
+          <div class="switch-toggle switch-3 switch-candy">
+            <input
+              class="theme1"
+              id="on"
+              name="state-d"
+              type="radio"
+              checked="checked"
+            />
+            <label for="on" onclick=""></label>
+
+            <input class="theme2" id="na" name="state-d" type="radio" />
+            <label for="na" class="disabled" onclick=""></label>
+
+            <input class="theme3" id="off" name="state-d" type="radio" />
+            <label for="off" onclick=""></label>
+          </div>
+        </div>
+      </div>
+      <div class="cal">
+        <input id="resultnum" class="result total" type="text" maxlength="7" />
+      </div>
+      <div class="number">
+        <div class="number-cal num-upper">
+          <button class="num num-line-1 num-7">7</button>
+          <button class="num num-line-1 num-8">8</button>
+          <button class="num num-line-1 num-9">9</button>
+          <button class="num cal-del">DEL</button>
+        </div>
+        <div class="number-cal">
+          <button class="num num-4">4</button>
+          <button class="num num-5">5</button>
+          <button class="num num-6">6</button>
+          <button class="num num-plus">+</button>
+        </div>
+        <div class="number-cal">
+          <button class="num num-1">1</button>
+          <button class="num num-2">2</button>
+          <button class="num num-3">3</button>
+          <button class="num num-minus">-</button>
+        </div>
+        <div class="number-cal">
+          <button class="num num-point">.</button>
+          <button class="num num-zero">0</button>
+          <button class="num num-divide">/</button>
+          <button class="num num-multiply">x</button>
+        </div>
+        <div class="number-cal">
+          <button class="num-set cal-reset reset">RESET</button>
+          <button class="num-set cal-equal equal">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
